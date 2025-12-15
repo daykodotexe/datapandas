@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datacheck"
+version = "0.1.0"
+description = "Lightweight data quality checks for pandas DataFrames"
+authors = [
+    { name="Your Name" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "pandas"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

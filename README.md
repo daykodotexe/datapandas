@@ -1,4 +1,3 @@
-[![PyPI version](https://badge.fury.io/py/datapandas.svg)](https://pypi.org/project/datapandas/)
 [![Tests](https://github.com/daykodotexe/datapandas/actions/workflows/tests.yml/badge.svg)]
 
 ````markdown
@@ -108,7 +107,3 @@ Built by **daykodotexe**
 
 GitHub: [https://github.com/daykodotexe/datapandas](https://github.com/daykodotexe/datapandas)
 PyPI: [https://pypi.org/project/datapandas/](https://pypi.org/project/datapandas/)
-
-````
-
-Just tell me 👍

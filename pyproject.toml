@@ -1,20 +1,9 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "dqch"
+name = "datapandas"
 version = "0.1.0"
-description = "Lightweight data quality checks for pandas DataFrames"
-authors = [
-    { name="dayko" }
-]
-readme = "README.md"
-requires-python = ">=3.9"
+description = "Lightweight data quality and profiling tools for pandas DataFrames"
+dependencies = ["pandas"]
 
-dependencies = [
-    "pandas"
-]
-
-[tool.setuptools.packages.find]
-where = ["."]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

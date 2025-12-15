@@ -1,3 +1,0 @@
-dqch
-examples
-tests

@@ -1,41 +1,40 @@
-[![Tests](https://github.com/daykodotexe/datapandas/actions/workflows/tests.yml/badge.svg)]
+# 📊 datapandas
 
-````markdown
-# datapandas
+**datapandas** is a lightweight Python library for **data quality checks and profiling**
+on **pandas DataFrames**.
 
-**datapandas** is a lightweight Python library that provides practical data quality
-and profiling utilities for **pandas DataFrames**.
-
-It is designed to help you quickly sanity-check datasets before analysis,
-modeling, or reporting.
+It helps you **quickly sanity-check datasets** before analysis, modeling, or reporting —
+without heavy dependencies or complex configuration.
 
 ---
 
-✨ Features
+## ✨ Features
 
-🔍 Data Quality Checks (`datacheck`)
-- Dataset summary (rows, columns)
-- Missing value percentage
-- Duplicate row percentage
-- Simple outlier detection
-- Clean, readable console output
+### 🔍 Data Quality Checks (`datacheck`)
 
-📊 Data Profiling (`profiling`)
-- Column cardinality analysis
-- Detect constant columns
-- Detect high-cardinality (ID-like) columns
+* Dataset overview (rows & columns)
+* Missing value percentage
+* Duplicate row percentage
+* Simple outlier detection
+* Clean, readable console output
+
+### 📊 Data Profiling (`profiling`)
+
+* Column cardinality analysis
+* Detection of constant columns
+* Detection of high-cardinality (ID-like) columns
 
 ---
 
-📦 Installation
+## 📦 Installation
 
 ```bash
 pip install datapandas
-````
+```
 
 ---
 
-🚀 Quick Start
+## 🚀 Quick Start
 
 ```python
 import pandas as pd
@@ -56,7 +55,7 @@ profiling.cardinality_report(df)
 
 ---
 
-📌 Example Output
+## 📌 Example Output
 
 ```text
 Rows: 4
@@ -72,17 +71,17 @@ Outlier columns: ['salary']
 
 ---
 
-🎯 Why datapandas?
+## 🎯 Why datapandas?
 
-* Simple and fast
-* No heavy dependencies
-* Designed for real-world data work
-* Useful for analysts, students, and data scientists
-* Easy to extend with new checks
+* ⚡ Simple and fast
+* 🪶 Lightweight (no heavy dependencies)
+* 🧠 Designed for real-world data workflows
+* 🎓 Useful for analysts, students, and data scientists
+* 🧩 Easy to extend with custom checks
 
 ---
 
-🧪 Testing
+## 🧪 Testing
 
 Run tests locally with:
 
@@ -92,18 +91,22 @@ pytest
 
 ---
 
-🛠 Roadmap
+## 🛠 Roadmap
 
-Planned features:
+Planned features include:
 
 * Type drift detection
 * Data quality score (0–100)
 * Report export (JSON / HTML)
 * Command-line interface (CLI)
 
-👤 Author
+---
+
+## 👤 Author
 
 Built by **daykodotexe**
 
-GitHub: [https://github.com/daykodotexe/datapandas](https://github.com/daykodotexe/datapandas)
-PyPI: [https://pypi.org/project/datapandas/](https://pypi.org/project/datapandas/)
+* GitHub: [https://github.com/daykodotexe/datapandas](https://github.com/daykodotexe/datapandas)
+* PyPI: [https://pypi.org/project/datapandas/](https://pypi.org/project/datapandas/)
+
+Say the word.

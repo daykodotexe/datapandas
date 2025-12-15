@@ -1,7 +1,7 @@
 import pandas as pd
-from datacheck.missing import missing_report
-from datacheck.duplicates import duplicate_report
-from datacheck.outliers import outlier_report
+from dqch.missing import missing_report
+from dqch.duplicates import duplicate_report
+from dqch.outliers import outlier_report
 
 
 def summary(df: pd.DataFrame) -> dict:

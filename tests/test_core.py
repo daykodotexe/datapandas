@@ -1,5 +1,5 @@
 import pandas as pd
-from datacheck import summary, missing_report, duplicate_report, outlier_report, pretty_summary
+from dqch import summary, missing_report, duplicate_report, outlier_report, pretty_summary
 
 
 def test_pretty_summary_runs():

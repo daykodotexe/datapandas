@@ -1,4 +1,4 @@
-from datacheck.summary import summary
+from dqch.summary import summary
 
 
 def pretty_summary(df) -> None:

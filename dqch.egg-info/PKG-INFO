@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: dqch
+Version: 0.1.0
+Summary: Lightweight data quality checks for pandas DataFrames
+Author: dayko
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+![Tests](https://github.com/daykodotexe/datacheck/actions/workflows/tests.yml/badge.svg)
+
+# datacheck
+
+`datacheck` is a lightweight Python package for quick data quality checks on
+pandas DataFrames. It helps you catch common data issues—missing values,
+duplicates, and outliers—before analysis or modeling.

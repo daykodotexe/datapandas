@@ -3,11 +3,11 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "datacheck"
+name = "dqch"
 version = "0.1.0"
 description = "Lightweight data quality checks for pandas DataFrames"
 authors = [
-    { name="Your Name" }
+    { name="dayko" }
 ]
 readme = "README.md"
 requires-python = ">=3.9"

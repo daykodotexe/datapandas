@@ -1,6 +1,16 @@
 import pandas as pd
-from datacheck import summary, missing_report, duplicate_report, outlier_report
+from datacheck import summary, missing_report, duplicate_report, outlier_report, pretty_summary
 
+
+def test_pretty_summary_runs():
+    import pandas as pd
+
+    df = pd.DataFrame({
+        "x": [1, 2, None],
+        "y": [10, 10, 10]
+    })
+
+    pretty_summary(df)
 
 def sample_df():
     return pd.DataFrame({
@@ -37,3 +47,4 @@ def test_summary_keys():
     assert "missing_pct" in report
     assert "duplicate_pct" in report
     assert "outlier_columns" in report
+

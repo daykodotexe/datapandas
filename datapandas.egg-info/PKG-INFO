@@ -1,5 +1,0 @@
-Metadata-Version: 2.4
-Name: datapandas
-Version: 0.1.0
-Summary: Lightweight data quality and profiling tools for pandas DataFrames
-Requires-Dist: pandas

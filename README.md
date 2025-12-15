@@ -1,5 +1,3 @@
-# datapandas
-
 [![PyPI version](https://badge.fury.io/py/datapandas.svg)](https://pypi.org/project/datapandas/)
 [![Tests](https://github.com/daykodotexe/datapandas/actions/workflows/tests.yml/badge.svg)]
 
@@ -14,23 +12,23 @@ modeling, or reporting.
 
 ---
 
-## ✨ Features
+✨ Features
 
-### 🔍 Data Quality Checks (`datacheck`)
+🔍 Data Quality Checks (`datacheck`)
 - Dataset summary (rows, columns)
 - Missing value percentage
 - Duplicate row percentage
 - Simple outlier detection
 - Clean, readable console output
 
-### 📊 Data Profiling (`profiling`)
+📊 Data Profiling (`profiling`)
 - Column cardinality analysis
 - Detect constant columns
 - Detect high-cardinality (ID-like) columns
 
 ---
 
-## 📦 Installation
+📦 Installation
 
 ```bash
 pip install datapandas
@@ -38,7 +36,7 @@ pip install datapandas
 
 ---
 
-## 🚀 Quick Start
+🚀 Quick Start
 
 ```python
 import pandas as pd
@@ -59,7 +57,7 @@ profiling.cardinality_report(df)
 
 ---
 
-## 📌 Example Output
+📌 Example Output
 
 ```text
 Rows: 4
@@ -75,7 +73,7 @@ Outlier columns: ['salary']
 
 ---
 
-## 🎯 Why datapandas?
+🎯 Why datapandas?
 
 * Simple and fast
 * No heavy dependencies
@@ -85,7 +83,7 @@ Outlier columns: ['salary']
 
 ---
 
-## 🧪 Testing
+🧪 Testing
 
 Run tests locally with:
 
@@ -95,7 +93,7 @@ pytest
 
 ---
 
-## 🛠 Roadmap
+🛠 Roadmap
 
 Planned features:
 
@@ -104,15 +102,7 @@ Planned features:
 * Report export (JSON / HTML)
 * Command-line interface (CLI)
 
----
-
-## 📄 License
-
-MIT License
-
----
-
-## 👤 Author
+👤 Author
 
 Built by **daykodotexe**
 

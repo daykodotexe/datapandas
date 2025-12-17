@@ -1,28 +1,28 @@
-# 📊 datapandas
+📊 datapandas
 
 **datapandas** is a lightweight Python library for **data quality checks and profiling**
-on **pandas DataFrames**.
+on **pandas DataFrames**, with a **pre-analysis quality gate** to catch issues
+before analysis or machine learning.
 
-It helps you **quickly sanity-check datasets** before analysis, modeling, or reporting —
-without heavy dependencies or complex configuration.
+It helps you quickly sanity-check datasets **without heavy dependencies or complex configuration**.
 
 ---
 
 ## ✨ Features
 
 ### 🔍 Data Quality Checks (`datacheck`)
-
-* Dataset overview (rows & columns)
-* Missing value percentage
-* Duplicate row percentage
-* Simple outlier detection
-* Clean, readable console output
+- Dataset overview (rows & columns)
+- Missing value percentage (threshold-based)
+- Duplicate row percentage (threshold-based)
+- Detection of constant columns
+- Detection of high-cardinality (ID-like) columns
+- **PASS / WARN / FAIL quality status**
+- Clean, readable console output
 
 ### 📊 Data Profiling (`profiling`)
-
-* Column cardinality analysis
-* Detection of constant columns
-* Detection of high-cardinality (ID-like) columns
+- Column cardinality analysis
+- Detection of constant columns
+- Detection of high-cardinality (ID-like) columns
 
 ---
 
@@ -30,7 +30,7 @@ without heavy dependencies or complex configuration.
 
 ```bash
 pip install datapandas
-```
+````
 
 ---
 
@@ -38,7 +38,7 @@ pip install datapandas
 
 ```python
 import pandas as pd
-from datapandas import datacheck, profiling
+from datapandas import datacheck
 
 df = pd.DataFrame({
     "age": [25, 30, None, 40],
@@ -46,27 +46,37 @@ df = pd.DataFrame({
     "id": [1, 2, 3, 4]
 })
 
-# Pretty data quality summary
-datacheck.pretty_summary(df)
+report = datacheck.run(df, missing_threshold=0.05)
+report.summary()
 
-# Column cardinality report
-profiling.cardinality_report(df)
+if report.status == "FAIL":
+    raise ValueError("Dataset failed basic quality checks")
 ```
+
+---
+
+## 🚦 Data Quality Gate
+
+`datapandas` can be used as a lightweight **quality gate** before analysis or modeling.
+
+Each check returns a status:
+
+* **PASS** — no issue detected
+* **WARN** — potential issue detected
+* **FAIL** — threshold exceeded
+
+The overall dataset status is the **worst status across all checks**.
 
 ---
 
 ## 📌 Example Output
 
 ```text
-Rows: 4
-Columns: 3
-Missing values: 8.33%
-Duplicate rows: 0.00%
-Outlier columns: ['salary']
-```
-
-```python
-{'id': 'high_cardinality'}
+Overall Status: FAIL
+- missing_values: FAIL (25.00% missing)
+- duplicate_rows: PASS (0.00% duplicate rows)
+- constant_columns: PASS (0 constant columns)
+- high_cardinality_columns: WARN (1 high-cardinality column)
 ```
 
 ---
@@ -97,7 +107,7 @@ Planned features include:
 
 * Type drift detection
 * Data quality score (0–100)
-* Report export (JSON / HTML)
+* Report export (HTML)
 * Command-line interface (CLI)
 
 ---
@@ -109,4 +119,23 @@ Built by **daykodotexe**
 * GitHub: [https://github.com/daykodotexe/datapandas](https://github.com/daykodotexe/datapandas)
 * PyPI: [https://pypi.org/project/datapandas/](https://pypi.org/project/datapandas/)
 
-Say the word.
+```
+
+---
+
+## ✅ What to do next (no thinking required)
+1. Copy-paste this into `README.md`
+2. Commit it
+3. Bump version to `0.2.0`
+4. Ship to PyPI
+
+You’re done with README.  
+Next time someone stars your repo, **this is why**.
+
+If you want, next I can:
+- sanity-check your repo before release  
+- write release notes  
+- help you post the PR announcement  
+
+Just say it.
+```

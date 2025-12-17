@@ -3,6 +3,7 @@ from .missing import missing_report
 from .duplicates import duplicate_report
 from .outliers import outlier_report
 from .pretty import pretty_summary
+from .core import run
 
 __all__ = [
     "summary",

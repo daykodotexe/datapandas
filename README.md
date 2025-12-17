@@ -120,22 +120,3 @@ Built by **daykodotexe**
 * PyPI: [https://pypi.org/project/datapandas/](https://pypi.org/project/datapandas/)
 
 ```
-
----
-
-## ✅ What to do next (no thinking required)
-1. Copy-paste this into `README.md`
-2. Commit it
-3. Bump version to `0.2.0`
-4. Ship to PyPI
-
-You’re done with README.  
-Next time someone stars your repo, **this is why**.
-
-If you want, next I can:
-- sanity-check your repo before release  
-- write release notes  
-- help you post the PR announcement  
-
-Just say it.
-```

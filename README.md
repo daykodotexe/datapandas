@@ -8,9 +8,9 @@ It helps you quickly sanity-check datasets **without heavy dependencies or compl
 
 ---
 
-## ✨ Features
+## Features
 
-### 🔍 Data Quality Checks (`datacheck`)
+### Data Quality Checks (`datacheck`)
 - Dataset overview (rows & columns)
 - Missing value percentage (threshold-based)
 - Duplicate row percentage (threshold-based)
@@ -19,14 +19,14 @@ It helps you quickly sanity-check datasets **without heavy dependencies or compl
 - **PASS / WARN / FAIL quality status**
 - Clean, readable console output
 
-### 📊 Data Profiling (`profiling`)
+### Data Profiling (`profiling`)
 - Column cardinality analysis
 - Detection of constant columns
 - Detection of high-cardinality (ID-like) columns
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ```bash
 pip install datapandas
@@ -34,7 +34,7 @@ pip install datapandas
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```python
 import pandas as pd
@@ -55,7 +55,7 @@ if report.status == "FAIL":
 
 ---
 
-## 🚦 Data Quality Gate
+## Data Quality Gate
 
 `datapandas` can be used as a lightweight **quality gate** before analysis or modeling.
 
@@ -69,7 +69,7 @@ The overall dataset status is the **worst status across all checks**.
 
 ---
 
-## 📌 Example Output
+## Example Output
 
 ```text
 Overall Status: FAIL
@@ -81,7 +81,7 @@ Overall Status: FAIL
 
 ---
 
-## 🎯 Why datapandas?
+## Why datapandas?
 
 * ⚡ Simple and fast
 * 🪶 Lightweight (no heavy dependencies)
@@ -91,7 +91,7 @@ Overall Status: FAIL
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Run tests locally with:
 
@@ -101,7 +101,7 @@ pytest
 
 ---
 
-## 🛠 Roadmap
+## Roadmap
 
 Planned features include:
 
@@ -112,7 +112,7 @@ Planned features include:
 
 ---
 
-## 👤 Author
+## Author
 
 Built by **daykodotexe**
 

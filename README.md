@@ -1,4 +1,4 @@
-📊 datapandas
+datapandas
 
 **datapandas** is a lightweight Python library for **data quality checks and profiling**
 on **pandas DataFrames**, with a **pre-analysis quality gate** to catch issues
